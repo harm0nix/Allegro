@@ -1,14 +1,20 @@
-var cues = {}
-var clips = {}
-var rules = {}
+extends Node2D
 
-var filepath = "res://allegroData/"
+var cues
+var clips
+var rules
+var conditions
+var tags
+
+var filepath = "res://Allegro_Data/"
 
 func _ready():
-	cues = loadJson(filepath + "cues.json")
+	cues = loadJson(filepath + "logic.json").cues
+	conditions = loadJson(filepath + "logic.json").conditions
+	rules = loadJson(filepath + "logic.json").rules
+	tags = loadJson(filepath + "logic.json").tags
 	clips = loadJson(filepath + "clips.json")
-	rules = loadJson(filepath + "rules.json")
-	
+
 func loadJson(path : String):
 	if FileAccess.file_exists(path):
 		var rawData = FileAccess.open(path, FileAccess.READ)
@@ -18,5 +24,6 @@ func loadJson(path : String):
 			return parsedFile
 		else:
 			print("ALLEGRO>> Error reading file " + path)
+			
 	else:
-		print("ALLEGRO>> File " + path + "does not exist")
+		print("ALLEGRO>> File " + path + " does not exist")

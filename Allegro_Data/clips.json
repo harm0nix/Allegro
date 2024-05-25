@@ -1,0 +1,26 @@
+{
+	"background0": {
+		"name" : "background0",
+		"key" : "A",
+		"tempo" : 120,
+		"timeSignature" : "4/4",
+		"measures" : 16,
+		"audio" : "background0.mp3"
+	},
+	"background1": {
+		"name" : "background1",
+		"key" : "Cm",
+		"tempo" : 80,
+		"timeSignature" : "6/8",
+		"measures" : 8,
+		"audio" : "background1.mp3"
+	},
+	"background2": {
+		"name" : "background2",
+		"key" : "Bm",
+		"tempo" : 150,
+		"timeSignature" : "3/4",
+		"measures" : 16,
+		"audio" : "background2.mp3"
+	}
+}

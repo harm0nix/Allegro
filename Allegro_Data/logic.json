@@ -1,0 +1,23 @@
+{
+	"cues": {
+		"cue0": false,
+		"cue1": false,
+		"cue2": false
+	},
+	"conditions": {
+		"cue0": "condition0.",
+		"cue1": "condition1.",
+		"cue2": "condition2."
+	},
+	"rules": {
+		"r.cue0.tag0.background0": false, 
+		"r.cue1.tag2.background1": false, 
+		"r.cue2.tag3.background2": false
+	},
+	"tags": {
+		"tag0": false,
+		"tag1": false,
+		"tag2": true,
+		"tag3": true
+	}
+}
